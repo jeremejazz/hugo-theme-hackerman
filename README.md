@@ -3,7 +3,7 @@
 This theme is a fork of [Hello Friend](https://github.com/panr/hugo-theme-hello-friend) by panr. 
 I created a clone because I have some personal customizations and using template overrides would not be enough. This is also serves as the theme for my website [blog.jereme.me](https://blog.jereme.me)
 
-![Hello Friend](https://github.com/panr/hugo-theme-hello-friend/blob/master/images/screenshot.png?raw=true)
+![Hackerman!](https://github.com/jeremejazz/hugo-theme-hackerman/blob/master/images/screenshot.png?raw=true)
 
 ---
 
