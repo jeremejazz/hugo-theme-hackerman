@@ -31,3 +31,6 @@
 
 <!-- head custom -->
 {{- partial "extended_head.html" . }}
+
+<!-- theme color (for mobile)-->
+<meta name="theme-color" content="{{ if eq .Site.Params.DefaultTheme "dark" }}#252627{{else}}#FFFFFF{{end}}">

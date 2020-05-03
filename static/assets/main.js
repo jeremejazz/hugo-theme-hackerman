@@ -115,7 +115,7 @@ eval("var container = document.querySelector(\".container\");\nvar menu = docume
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Toggle theme\nvar getTheme = window.localStorage && window.localStorage.getItem(\"theme\");\nvar themeToggle = document.querySelector(\".theme-toggle\");\nvar isDark = getTheme === \"dark\";\n\nif (getTheme !== null) {\n  document.body.classList.toggle(\"dark-theme\", isDark);\n}\n\nthemeToggle.addEventListener(\"click\", function () {\n  document.body.classList.toggle(\"dark-theme\");\n  window.localStorage && window.localStorage.setItem(\"theme\", document.body.classList.contains(\"dark-theme\") ? \"dark\" : \"light\");\n});\n\n//# sourceURL=webpack:///./source/js/theme.js?");
+eval("/**\n * From rhazdon fork hello-friend-ng for updating theme-color meta tag  \n * https://github.com/rhazdon/hugo-theme-hello-friend-ng/blob/20810b2afdcfc2b0636d0c3277f6f2633af70916/assets/js/theme.js\n * Hello Friend is free software: you can redistribute it and/or modify\n * it under the terms of the MIT License\n */\n// Toggle theme\nvar getTheme = window.localStorage && window.localStorage.getItem(\"theme\");\nvar themeToggle = document.querySelector(\".theme-toggle\");\nvar isDark = getTheme === \"dark\";\nvar metaThemeColor = document.querySelector(\"meta[name=theme-color]\");\n\nif (getTheme !== null) {\n  document.body.classList.toggle(\"dark-theme\", isDark);\n  isDark ? metaThemeColor.setAttribute(\"content\", \"#252627\") : metaThemeColor.setAttribute(\"content\", \"#fafafa\");\n}\n\nthemeToggle.addEventListener(\"click\", function () {\n  document.body.classList.toggle(\"dark-theme\");\n  window.localStorage && window.localStorage.setItem(\"theme\", document.body.classList.contains(\"dark-theme\") ? \"dark\" : \"light\");\n  document.body.classList.contains(\"dark-theme\") ? metaThemeColor.setAttribute(\"content\", \"#252627\") : metaThemeColor.setAttribute(\"content\", \"#fafafa\");\n  ;\n});\n\n//# sourceURL=webpack:///./source/js/theme.js?");
 
 /***/ }),
 
@@ -126,7 +126,7 @@ eval("// Toggle theme\nvar getTheme = window.localStorage && window.localStorage
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /Users/radek/Documents/Git/Moje/hello-friend/themes/hello-friend/source/js/index.js */\"./source/js/index.js\");\n__webpack_require__(/*! /Users/radek/Documents/Git/Moje/hello-friend/themes/hello-friend/source/js/menu.js */\"./source/js/menu.js\");\nmodule.exports = __webpack_require__(/*! /Users/radek/Documents/Git/Moje/hello-friend/themes/hello-friend/source/js/theme.js */\"./source/js/theme.js\");\n\n\n//# sourceURL=webpack:///multi_./source/js/index.js_./source/js/menu.js_./source/js/theme.js?");
+eval("__webpack_require__(/*! /home/jereme/Projects/github/blog.jereme/themes/hugo-theme-hackerman/source/js/index.js */\"./source/js/index.js\");\n__webpack_require__(/*! /home/jereme/Projects/github/blog.jereme/themes/hugo-theme-hackerman/source/js/menu.js */\"./source/js/menu.js\");\nmodule.exports = __webpack_require__(/*! /home/jereme/Projects/github/blog.jereme/themes/hugo-theme-hackerman/source/js/theme.js */\"./source/js/theme.js\");\n\n\n//# sourceURL=webpack:///multi_./source/js/index.js_./source/js/menu.js_./source/js/theme.js?");
 
 /***/ })
 
