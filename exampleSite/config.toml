@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-theme = "hugo-theme-hello-friend"
+theme = "hugo-theme-hackerman"
 paginate = 5
 
 [params]
@@ -15,8 +15,8 @@ paginate = 5
 
 [languages]
   [languages.en]
-    title = "Hello Friend"
-    subtitle = "A simple theme for Hugo"
+    title = "Hackerman"
+    subtitle = "A fork of Hello Friend by panr"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
@@ -30,7 +30,7 @@ paginate = 5
     dateFormatList = "2006-01-02"
 
     [languages.en.params.logo]
-      logoText = "hello friend"
+      logoText = "hackerman!"
       logoHomeLink = "/"
     # or
     #
